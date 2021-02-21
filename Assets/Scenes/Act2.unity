@@ -412,7 +412,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 70, y: 15.004883}
+    oldSize: {x: 70, y: 15}
     newSize: {x: 14.4, y: 5.02}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -484,10 +484,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -893366605
+  m_SortingLayer: -1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 75f574932ae97e74bb38f0d5a0985751, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 47470dd77395e54428963fa2cc9269ef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -714,8 +714,8 @@ MonoBehaviour:
     name: Dave
     profile: {fileID: 21300000, guid: 0a4cdbd6a8f0ed94b9433caedaff3fdc, type: 3}
     dialogue:
-    - Seen any remoaners? Hahahaha!
-    - I hear the monster up ahead is even worse than the EU!
+    - "Look at my new blue passport! Ain\u2019t she a beaut?"
+    - They say the monster up ahead is uglier than Angela Merkel!
   manager: {fileID: 0}
   audioS: {fileID: 1393785969}
   sfx: {fileID: 8300000, guid: cba36af8775e5804eb942a6d7e7dced4, type: 3}
@@ -814,18 +814,8 @@ MonoBehaviour:
     name: King Ban'anee
     profile: {fileID: -1724822148711148119, guid: 5b9b79a0652e76b4fb2ce25b8f06fac7, type: 3}
     dialogue:
-    - "Greetings, adventurer, and welcome to Gloomspire!\r"
-    - Now, what was your name again?
-    - '[Player inputs name]'
-    - Ah yes, <player>, of course!
-    - I have summoned you here for a matter of great importance!
-    - A horrific monster is threatening our beautiful Kingdom of Olesea!
-    - "The fiend likely aims to steal my most precious possession, the Staff of Fl\u2019ube-On."
-    - YOU must stop this terrible monster before it claims such a powerful artifact!
-    - If you succeed in this feat, you shall receive wealth beyond measure!
-    - The vile beast has made its lair in the fabled Cave of Q'Uock-nd'Boowl'ss.
-    - Talk to my guard at the castle door, he will take you there.
-    - Now hurry! Before it is too late!
+    - Uh... that was weird. You wanna try again maybe?
+    - "I\u2019m sure the game's fixed now..."
   manager: {fileID: 1704760685}
   audioS: {fileID: 1393785969}
   sfx: {fileID: 8300000, guid: 1f921a2438169cc47ada1b82b10cf8be, type: 3}
@@ -842,7 +832,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.5906258, y: 6.536933}
+  m_Offset: {x: -10.950882, y: -1.6291599}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -853,7 +843,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.3557968, y: 20.462034}
+  m_Size: {x: 6.823883, y: 4.1298485}
   m_EdgeRadius: 0
 --- !u!4 &199649078
 Transform:
@@ -1029,7 +1019,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -893366605
   m_SortingLayer: -1
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 9ef52810f4a00e14ba900a8af95719af, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1432,11 +1422,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -12.8099, y: 7.976467}
-      - {x: -12.736163, y: -8.007564}
-      - {x: 12.773927, y: -7.9431467}
-      - {x: 12.727628, y: 8.0199585}
-      - {x: -0.54671764, y: 7.994957}
+    - - {x: -9.522488, y: 4.5178356}
+      - {x: -9.619969, y: -4.480444}
+      - {x: 9.589247, y: -4.484517}
+      - {x: 9.611434, y: 4.561326}
+      - {x: -0.23852414, y: 4.5363255}
 --- !u!1 &824470121
 GameObject:
   m_ObjectHideFlags: 0
@@ -1794,7 +1784,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: -1098392953
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_TargetDisplay: 0
 --- !u!224 &1199314979
 RectTransform:
@@ -1808,6 +1798,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 136885629}
+  - {fileID: 1938102387}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1829,7 +1820,7 @@ GameObject:
   - component: {fileID: 1210092173}
   - component: {fileID: 1210092174}
   m_Layer: 0
-  m_Name: PickleBoss
+  m_Name: Boss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1875,7 +1866,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -4055754546835428529, guid: 945078d5336f381409930deedfd888a1, type: 3}
+  m_Sprite: {fileID: 3062108389438530070, guid: 1c59436587f3c244bbd2a30d11e98ae1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1894,8 +1885,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1210092170}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -59.13, y: -56.38, z: 0}
-  m_LocalScale: {x: 32.408104, y: 32.408104, z: 32.408104}
+  m_LocalPosition: {x: -59.6, y: -57.1, z: 0}
+  m_LocalScale: {x: 18.350443, y: 18.35044, z: 18.35044}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
@@ -1910,7 +1901,7 @@ Animator:
   m_GameObject: {fileID: 1210092170}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4d0a012818e1b29469424a56e63ec00c, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3826fd71503b7ab49934b41af3ce6ca0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1928,15 +1919,42 @@ MonoBehaviour:
   m_GameObject: {fileID: 1210092170}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 305aa379554aa394db541a9814005123, type: 3}
+  m_Script: {fileID: 11500000, guid: 5bd286b468a158143bbb173cca7fe25a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isActive: 0
   images:
-  - {fileID: 1968223584885594016, guid: 945078d5336f381409930deedfd888a1, type: 3}
-  - {fileID: -3415525840314812519, guid: 945078d5336f381409930deedfd888a1, type: 3}
-  - {fileID: -4055754546835428529, guid: 945078d5336f381409930deedfd888a1, type: 3}
-  - {fileID: 2268941411663264764, guid: 945078d5336f381409930deedfd888a1, type: 3}
+  - {fileID: 3062108389438530070, guid: 1c59436587f3c244bbd2a30d11e98ae1, type: 3}
+  - {fileID: -6291626101554707717, guid: 1c59436587f3c244bbd2a30d11e98ae1, type: 3}
+  - {fileID: -6247856111080654989, guid: 1c59436587f3c244bbd2a30d11e98ae1, type: 3}
+  text:
+  - m
+  - a
+  - r
+  - g
+  - a
+  - r
+  - e
+  - t
+  - space
+  - t
+  - h
+  - a
+  - t
+  - c
+  - h
+  - e
+  - r
+  - space
+  - i
+  - s
+  - space
+  - d
+  - e
+  - a
+  - d
+  - return
+  prompt: {fileID: 1938102388}
   timer: 0
   reps: 0
   body: {fileID: 1210092171}
@@ -2172,7 +2190,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3c0342534f70a384d973105a985a738c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 1aab7b5df87c7fb43a457e105cd79477, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.45
   m_Pitch: 1
@@ -2303,16 +2321,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Pickle Jordan
+    name: Sk'el-Etho'or
     profile: {fileID: -4055754546835428529, guid: 945078d5336f381409930deedfd888a1, type: 3}
     dialogue:
-    - At last we meet, <player>! It is I, your worst nightmare...
-    - PICKLE JORDAN
-    - Now prepare to get SLAMMED!
+    - Welcome, adventurer, to this place where destiny is made!
+    - I have waited long for your arrival...
+    - '[Glitched Sk''el-Etho''or is revealed]'
+    - It is I, Sk'el-Etho'or, conqueror of worlds, master of...
+    - WHAT HAS HAPPENED TO MY BODY?
+    - What FOUL SORCERY has so mutilated my beautiful visage?
+    - "I\u2019ll have to get to the bottom of this..."
+    - "But first, I\u2019ll crush you like the insignificant insect you are!"
   manager: {fileID: 1704760685}
   boss: {fileID: 1210092174}
   audioS: {fileID: 1393785969}
-  theme: {fileID: 0}
+  theme: {fileID: 8300000, guid: 8af212d9d1c06aa44a0ff8e9c33d811e, type: 3}
+  theme2: {fileID: 8300000, guid: ff82d10aacdd4094b907dd2184330360, type: 3}
   sfx: {fileID: 8300000, guid: f29817d7a37ce904e83edc22cd04d5bb, type: 3}
 --- !u!61 &1419204671
 BoxCollider2D:
@@ -2505,7 +2529,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1861e823f649856479276d18d0f25888, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 55bc005ca905b9f4f820288ce16ab4d5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2525,7 +2549,7 @@ Transform:
   m_GameObject: {fileID: 1506288929}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1, y: -57.2, z: 0}
-  m_LocalScale: {x: 2.3918, y: 2.3918, z: 2.3918}
+  m_LocalScale: {x: 2.9966862, y: 2.9966862, z: 2.9966862}
   m_Children:
   - {fileID: 760391830}
   m_Father: {fileID: 0}
@@ -2694,6 +2718,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   profile: {fileID: 1806044268}
   nameText: {fileID: 938776675}
+  prompt: {fileID: 1938102388}
   dialogueText: {fileID: 1250475383}
   animator: {fileID: 136885630}
   player: {fileID: 100568716}
@@ -2799,6 +2824,88 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1717047728
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1717047730}
+  - component: {fileID: 1717047729}
+  m_Layer: 0
+  m_Name: throneroomoverlay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1717047729
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717047728}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1098392953
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: d2979ef79715f984a955464803c8da35, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 7.19, y: 15}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1717047730
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717047728}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -101.62, y: -7.3, z: 0}
+  m_LocalScale: {x: 1.831799, y: 1.831799, z: 1.831799}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1724785405
 GameObject:
   m_ObjectHideFlags: 0
@@ -2945,12 +3052,14 @@ MonoBehaviour:
     name: Guard
     profile: {fileID: 21300000, guid: 55d2060cd7366dd4ebf8264ce2059590, type: 3}
     dialogue:
-    - Sir <player>! Are you ready to leave for the Cave of Q'Uock-nd'Boowl'ss?
-    - '[player chooses leave]'
-    - Please leave the castle to your left! -> [move on to boss fight]
+    - "R\u2019a-Iden\u2019n! Going to Q'Uock-nd'Boowl'ss again, eh?s???\u0436"
+    - "R\u2019a-Iden\u2019n! Going to Q'Uock-nd'Boowl'ssss again, eh???"
+    - "R\u2019a-Iden\u2019n! Going to Q'Uock-nd'Boowl'ss again, eh?"
+    - "R\u2019a-Iden\u2019n! Going to Q'Uock-nd'Boowl'ss again, eh?"
+    - "I\u2019m sure you\u2019ll get him this time!"
   manager: {fileID: 0}
   audioS: {fileID: 1393785969}
-  sfx: {fileID: 8300000, guid: cba36af8775e5804eb942a6d7e7dced4, type: 3}
+  sfx: {fileID: 8300000, guid: 2dca36bcd5b2eca48af6b6b96243415e, type: 3}
 --- !u!1 &1806044267
 GameObject:
   m_ObjectHideFlags: 0
@@ -3007,7 +3116,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1098392953
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: -1724822148711148119, guid: 5b9b79a0652e76b4fb2ce25b8f06fac7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3265,6 +3374,140 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 729aad4491e915a41bda2b8325cf757a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1938102386
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1938102387}
+  - component: {fileID: 1938102389}
+  - component: {fileID: 1938102388}
+  m_Layer: 5
+  m_Name: TypePrompt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1938102387
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938102386}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.1705, y: 1.1705, z: 1.1705}
+  m_Children: []
+  m_Father: {fileID: 1199314979}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 152.9}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1938102388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938102386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'TYPE: M'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 1
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -33.775784, y: 0, z: -100.57672, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1938102389
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938102386}
+  m_CullTransparentMesh: 0
 --- !u!1 &1972129325
 GameObject:
   m_ObjectHideFlags: 0
@@ -3300,7 +3543,7 @@ MonoBehaviour:
   player: {fileID: 100568711}
   newLoc: {x: -174.2123, y: -65}
   audioS: {fileID: 1393785969}
-  audio: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!61 &1972129327
 BoxCollider2D:
   m_ObjectHideFlags: 0

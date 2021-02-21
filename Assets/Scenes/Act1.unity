@@ -484,8 +484,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -893366605
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 75f574932ae97e74bb38f0d5a0985751, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1808,6 +1808,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 136885629}
+  - {fileID: 1648149974}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1937,6 +1938,12 @@ MonoBehaviour:
   - {fileID: -3415525840314812519, guid: 945078d5336f381409930deedfd888a1, type: 3}
   - {fileID: -4055754546835428529, guid: 945078d5336f381409930deedfd888a1, type: 3}
   - {fileID: 2268941411663264764, guid: 945078d5336f381409930deedfd888a1, type: 3}
+  text:
+  - "\u0444\u0436\u044B\u0432\u043E\u0436\u043A\u043D"
+  - PICKLE JUICEPICKLE JUICEPICKLE JUICEPICKLE JUICE
+  - "u\u0119\u0105\xF3\u017A\u0107\u017A\u03B6\u03C8\u03C9"
+  - "\xA7\xA7\xA7\xA7\u0118\u03AC\u03B405*("
+  prompt: {fileID: 1648149975}
   timer: 0
   reps: 0
   body: {fileID: 1210092171}
@@ -2312,7 +2319,8 @@ MonoBehaviour:
   manager: {fileID: 1704760685}
   boss: {fileID: 1210092174}
   audioS: {fileID: 1393785969}
-  theme: {fileID: 0}
+  theme: {fileID: 8300000, guid: 8af212d9d1c06aa44a0ff8e9c33d811e, type: 3}
+  theme2: {fileID: 8300000, guid: 02a55b600a4288d48bb85f8ffa31ba38, type: 3}
   sfx: {fileID: 8300000, guid: f29817d7a37ce904e83edc22cd04d5bb, type: 3}
 --- !u!61 &1419204671
 BoxCollider2D:
@@ -2663,6 +2671,140 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1519586453}
   m_CullTransparentMesh: 0
+--- !u!1 &1648149973
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1648149974}
+  - component: {fileID: 1648149976}
+  - component: {fileID: 1648149975}
+  m_Layer: 5
+  m_Name: Promptbox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1648149974
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648149973}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1199314979}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -73, y: 134}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1648149975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648149973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'TYPE: '
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 1
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1648149976
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648149973}
+  m_CullTransparentMesh: 0
 --- !u!1 &1704760684
 GameObject:
   m_ObjectHideFlags: 0
@@ -2694,6 +2836,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   profile: {fileID: 1806044268}
   nameText: {fileID: 938776675}
+  prompt: {fileID: 1648149975}
   dialogueText: {fileID: 1250475383}
   animator: {fileID: 136885630}
   player: {fileID: 100568716}
@@ -2858,7 +3001,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: c33aa5cc412016a42955f1852781339b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2950,7 +3093,7 @@ MonoBehaviour:
     - Please leave the castle to your left! -> [move on to boss fight]
   manager: {fileID: 0}
   audioS: {fileID: 1393785969}
-  sfx: {fileID: 8300000, guid: cba36af8775e5804eb942a6d7e7dced4, type: 3}
+  sfx: {fileID: 8300000, guid: 2dca36bcd5b2eca48af6b6b96243415e, type: 3}
 --- !u!1 &1806044267
 GameObject:
   m_ObjectHideFlags: 0
@@ -3300,7 +3443,7 @@ MonoBehaviour:
   player: {fileID: 100568711}
   newLoc: {x: -174.2123, y: -65}
   audioS: {fileID: 1393785969}
-  audio: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!61 &1972129327
 BoxCollider2D:
   m_ObjectHideFlags: 0

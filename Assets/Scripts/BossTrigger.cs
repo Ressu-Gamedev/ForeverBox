@@ -9,7 +9,7 @@ public class BossTrigger : MonoBehaviour
     public GameObject player;
     public Vector2 newLoc;
     public AudioSource audioS;
-    public AudioClip audio;
+    public AudioClip clip;
 
     private void OnTriggerEnter2D(Collider2D collision){
         if(collision.CompareTag("Player"))
@@ -17,7 +17,7 @@ public class BossTrigger : MonoBehaviour
             collision.transform.position = newLoc;
             cam1.SetActive(false);
             cam2.SetActive(true);
-            audioS.clip = audio;
+            audioS.clip = clip;
             audioS.Play();
             Destroy(this);
         }

@@ -9,6 +9,7 @@ public class DialogueManager : MonoBehaviour
     private Queue<string> dialogue;
     public SpriteRenderer profile;
     public TextMeshProUGUI nameText;
+    public TextMeshProUGUI prompt;
     public TextMeshProUGUI dialogueText;
     public Animator animator;
     public PlayerMovement player;
@@ -17,6 +18,7 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         dialogue = new Queue<string>();
+        prompt.gameObject.SetActive(false);
     }
 
     public void StartDialogue(Dialogue toPlay){
