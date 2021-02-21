@@ -11,6 +11,8 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
     public Animator animator;
+    public PlayerMovement player;
+    public bool inProgress = false;
 
     void Start()
     {
@@ -20,6 +22,8 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(Dialogue toPlay){
         //Debug.Log("Starting " + toPlay.name);
         animator.SetBool("IsOpen", true);
+        player.frozen = true;
+        inProgress = true;
         profile.sprite = toPlay.profile;
         nameText.text = toPlay.name;
         dialogue.Clear();
@@ -43,6 +47,8 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue(){
         //Debug.Log("Ending dialogue");
         animator.SetBool("IsOpen", false);
+        player.frozen = false;
+        inProgress = false;
     }
 
 }

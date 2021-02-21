@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public CircleCollider2D feet;
     public float speed = 100f;
     public float jumpHeight = 100f;
+    public bool frozen = false;
     private float mHorizontal;
     
     void Start()
@@ -20,6 +21,10 @@ public class PlayerMovement : MonoBehaviour
     
     void Update()
     {
+        if(frozen){
+            mHorizontal = 0;
+            return;
+        }
         mHorizontal = Input.GetAxis("Horizontal");
         if(Input.GetButtonDown("Jump") && feet.IsTouchingLayers(LayerMask.GetMask("Ground"))){
             rb.AddForce(new Vector2(0f, jumpHeight), ForceMode2D.Impulse);
