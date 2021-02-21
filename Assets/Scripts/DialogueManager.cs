@@ -7,6 +7,7 @@ using TMPro;
 public class DialogueManager : MonoBehaviour
 {
     private Queue<string> dialogue;
+    public SpriteRenderer profile;
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
     public Animator animator;
@@ -19,6 +20,7 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(Dialogue toPlay){
         //Debug.Log("Starting " + toPlay.name);
         animator.SetBool("IsOpen", true);
+        profile.sprite = toPlay.profile;
         nameText.text = toPlay.name;
         dialogue.Clear();
         foreach (string phrase in toPlay.dialogue){
