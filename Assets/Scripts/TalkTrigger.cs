@@ -23,7 +23,7 @@ public class TalkTrigger : DialogueTrigger
     void Update(){
         if(!end) return;
         if(!manager.inProgress && trig){
-            PlayerPrefs.SetInt("playthrough", 1);
+            PlayerPrefs.SetInt("playthrough", 4);
             SceneManager.LoadScene(0, LoadSceneMode.Single);
             Destroy(this);
         }
